@@ -1,12 +1,12 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickLogIn(View view) {
         if (checkEmail() && checkPassword()) {
-            Intent intent = new Intent(MainActivity.this,com.example.myapplication.HomeActivity.class);
+            Intent intent = new Intent(MainActivity.this,com.example.myapplication.FragmentActivity.class);
             startActivity(intent);
         }
     }
